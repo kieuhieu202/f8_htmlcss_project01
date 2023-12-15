@@ -42,8 +42,10 @@ a {
 }
 
 /* header*/
-.header {
+.hero-wrap {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: calc(100vh - 90px);
@@ -98,21 +100,19 @@ a {
   margin-left: 18px;
   border-radius: 8px;
 }
-.hero {
-  margin-top: 130px;
-}
-.hero .info {
+
+.hero-wrap .info {
   width: 50.4%;
 }
 
-.hero .info .sub-title {
+.hero-wrap .info .sub-title {
   color: #687690;
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.18px;
 }
 
-.hero .info .title {
+.hero-wrap .info .title {
   color: #000336;
   font-size: 6.4rem;
   font-weight: 700;
@@ -120,7 +120,7 @@ a {
   margin-top: 8px;
 }
 
-.hero .info .desc {
+.hero-wrap .info .desc {
   color: #5a6473;
   font-size: 1.8rem;
   font-weight: 400;
@@ -128,7 +128,7 @@ a {
   margin-top: 30px;
 }
 
-.hero .info .learn-more-btn {
+.hero-wrap .info .learn-more-btn {
   color: #fff;
   min-width: 170px;
   text-align: center;
@@ -137,7 +137,7 @@ a {
   margin-top: 40px;
 }
 
-.hero .hero-img {
+.hero-wrap .hero-img {
   position: absolute;
   bottom: 0;
   right: calc((100vw - 1110px) / 2 - 100px);
