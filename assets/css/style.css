@@ -35,21 +35,29 @@ a {
 .content {
   width: 1110px;
   max-width: calc(100% - 48px);
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* header*/
 .header {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #e6f0ff;
 }
-
+.fixed-header {
+  z-index: 1;
+  background-color: #e6f0ff;
+  position: sticky;
+  top: -26px;
+  padding-top: 26px;
+}
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  /* padding-top: 38px; */
+  padding: 12px 0;
 }
 
 .navbar ul {
